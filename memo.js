@@ -49,7 +49,6 @@ function generarTablero() {
     // desorganizar las cartas
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
-    ocultar();
 }
 function ocultar(){
     document.getElementById("newJuego").style.display = "none";
