@@ -1,0 +1,11 @@
+iconos:
+https://editor.p5js.org/Jeff-Aporta/sketches/odCrSbV8h
+
+imagenes y gif:
+https://editor.p5js.org/Jeff-Aporta/sketches/xaZn8parC
+
+ejemplos:
+	https://codepen.io/calde2006/pen/RwryRWe?editors=1000
+	https://codepen.io/glezjose/pen/ROzJZm
+	https://codepen.io/CarlosS99/details/VwPZzLo
+	https://codepen.io/davcs86/pen/MWpVpda
