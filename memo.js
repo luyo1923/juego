@@ -1,9 +1,11 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
+
 document.addEventListener("DOMContentLoaded", () => {
     new generarTablero();
 });
+
 function cargarIconos() {
     // generar cada uno de los elementos de los iconos
     // cadena de texto comillas simples
@@ -22,6 +24,7 @@ function cargarIconos() {
         '<i class="fas fa-dice-d20"></i>',
     ];
 }
+
 function generarTablero() {
     cargarIconos();
     selecciones = [];
@@ -43,6 +46,7 @@ function generarTablero() {
             </div>
         </div>        
         `);
+
         // si el contador "i" no es multiplo de 2 eliminar el primer elemento de iconos
         if (i % 2 == 1) {
             iconos.splice(0, 1);
@@ -52,12 +56,15 @@ function generarTablero() {
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
 }
+
 function ocultar(){
     document.getElementById("newJuego").style.display = "none";
 }
+
 // tarjetas seleccionadas y deseleccionadas
 function seleccionarTarjeta(i) {
     let tarjeta = document.getElementById("tarjeta" + i);
+
     if (tarjeta.style.transform != "rotateY(180deg)") {
         tarjeta.style.transform = "rotateY(180deg)";
         selecciones.push(i);
@@ -67,10 +74,12 @@ function seleccionarTarjeta(i) {
         selecciones = [];
     }
 }
+
 function deseleccionar(selecciones) {
     setTimeout(() => {
         let trasera1 = document.getElementById("trasera" + selecciones[0]);
         let trasera2 = document.getElementById("trasera" + selecciones[1]);
+        
         // si no coinciden giran
         if (trasera1.innerHTML != trasera2.innerHTML) {
             let tarjeta1 = document.getElementById("tarjeta" + selecciones[0]);
