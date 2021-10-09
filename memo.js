@@ -1,7 +1,9 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
-generarTablero();
+document.addEventListener("DOMContentLoaded", () => {
+    new generarTablero();
+});
 function cargarIconos() {
     // generar cada uno de los elementos de los iconos
     // cadena de texto comillas simples
@@ -82,3 +84,4 @@ function deseleccionar(selecciones) {
         }
     }, 1000);
 }
+
