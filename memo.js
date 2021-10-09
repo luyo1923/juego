@@ -1,6 +1,11 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
+var jugadorUno = 0;
+var jugadorDos = 0;
+var primerJugador = true;
+var segundoJugador = false;
+var jugUnoNombre = document.getElementById("ingname").value;
 
 document.addEventListener("DOMContentLoaded", () => {
     new generarTablero();
@@ -57,10 +62,6 @@ function generarTablero() {
     tablero.innerHTML = tarjetas.join(" ");
 }
 
-function ocultar(){
-    document.getElementById("newJuego").style.display = "none";
-}
-
 // tarjetas seleccionadas y deseleccionadas
 function seleccionarTarjeta(i) {
     let tarjeta = document.getElementById("tarjeta" + i);
@@ -79,11 +80,11 @@ function deseleccionar(selecciones) {
     setTimeout(() => {
         let trasera1 = document.getElementById("trasera" + selecciones[0]);
         let trasera2 = document.getElementById("trasera" + selecciones[1]);
-        
+
         // si no coinciden giran
         if (trasera1.innerHTML != trasera2.innerHTML) {
             let tarjeta1 = document.getElementById("tarjeta" + selecciones[0]);
-            let tarjeta2 = document.getElementById("tarjeta" + selecciones[1]);
+            let tarjeta2 = document.getElementById(`tarjeta${selecciones[1]}`);
             tarjeta1.style.transform = "rotateY(0deg)";
             tarjeta2.style.transform = "rotateY(0deg)";
         }else{
