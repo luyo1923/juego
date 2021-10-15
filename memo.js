@@ -1,11 +1,13 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
-var jugadorUno = 0;
-var jugadorDos = 0;
-var primerJugador = true;
-var segundoJugador = false;
-var jugUnoNombre = document.getElementById("ingname").value;
+let jugadorUno = 0;
+let jugadorDos = 0;
+let primerJugador = true;
+let segundoJugador = false;
+
+
+document.onload = generarTablero();
 
 document.addEventListener("DOMContentLoaded", () => {
     new generarTablero();
@@ -60,6 +62,9 @@ function generarTablero() {
     // desorganizar las cartas
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
+
+    var jugUnoName = document.getElementById('ingname').value;
+    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": ";
 }
 
 // tarjetas seleccionadas y deseleccionadas

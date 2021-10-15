@@ -56,7 +56,7 @@ div {
 }
 
 /* boton de nuevo juego */
-#newJuego {
+.newJuego {
     cursor: pointer;
     background: linear-gradient(orange, darkorange);
     padding: 20px;

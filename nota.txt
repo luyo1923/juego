@@ -14,3 +14,5 @@ ejemplos:
 	https://codepen.io/CarlosS99/details/VwPZzLo
 
 	https://codepen.io/davcs86/pen/MWpVpda
+
+	https://www.it-swarm-es.com/es/javascript/javascript-que-se-ejecuta-despues-de-cargar-la-pagina/957969702/
