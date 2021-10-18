@@ -1,10 +1,11 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
-let jugadorUno = 0;
-let jugadorDos = 0;
-let primerJugador = true;
-let segundoJugador = false;
+// let jugadorUno = 0;
+// let jugadorDos = 0;
+// let primerJugador = true;
+// let segundoJugador = false;
+var movi=0;
 
 document.onload = generarTablero();
 
@@ -74,20 +75,21 @@ function generarTablero() {
     tablero.innerHTML = tarjetas.join(" ");
 
     var jugUnoName = getParameterByName('nombre');
-    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": ";
+    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
 }
 
 // tarjetas seleccionadas y deseleccionadas
 function seleccionarTarjeta(i) {
     let tarjeta = document.getElementById("tarjeta" + i);
-
     if (tarjeta.style.transform != "rotateY(180deg)") {
         tarjeta.style.transform = "rotateY(180deg)";
         selecciones.push(i);
+        movi++;
     }
     if (selecciones.length == 2) {
         deseleccionar(selecciones);
         selecciones = [];
+        movi++;
     }
 }
 
@@ -102,10 +104,12 @@ function deseleccionar(selecciones) {
             let tarjeta2 = document.getElementById(`tarjeta${selecciones[1]}`);
             tarjeta1.style.transform = "rotateY(0deg)";
             tarjeta2.style.transform = "rotateY(0deg)";
+            movi++;
         }else{
             // si coinciden se cambia de color plum = "color ciruela"
             trasera1.style.background = "plum";
             trasera2.style.background = "plum";
+            movi++;
         }
     }, 1000);
 }
