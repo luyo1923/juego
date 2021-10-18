@@ -6,7 +6,6 @@ let jugadorDos = 0;
 let primerJugador = true;
 let segundoJugador = false;
 
-
 document.onload = generarTablero();
 
 document.addEventListener("DOMContentLoaded", () => {
