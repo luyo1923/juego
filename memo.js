@@ -13,6 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
     new generarTablero();
 });
 
+/**
+ * @param String name
+ * @return String
+ */
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
 function cargarIconos() {
     // generar cada uno de los elementos de los iconos
     // cadena de texto comillas simples
@@ -63,7 +74,7 @@ function generarTablero() {
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
 
-    var jugUnoName = document.getElementById('ingname').value;
+    var jugUnoName = getParameterByName('nombre');
     document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": ";
 }
 
