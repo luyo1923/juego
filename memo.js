@@ -6,6 +6,7 @@ let selecciones = []; //donde se guardan temporalmente las selecciones de las ta
 // let primerJugador = true;
 // let segundoJugador = false;
 var movi=0;
+var jugUnoName = getParameterByName('nombre');
 
 document.onload = generarTablero();
 
@@ -74,8 +75,8 @@ function generarTablero() {
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
 
-    var jugUnoName = getParameterByName('nombre');
-    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
+    
+    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": ";
 }
 
 // tarjetas seleccionadas y deseleccionadas
@@ -84,12 +85,10 @@ function seleccionarTarjeta(i) {
     if (tarjeta.style.transform != "rotateY(180deg)") {
         tarjeta.style.transform = "rotateY(180deg)";
         selecciones.push(i);
-        movi++;
     }
     if (selecciones.length == 2) {
         deseleccionar(selecciones);
         selecciones = [];
-        movi++;
     }
 }
 
@@ -104,12 +103,10 @@ function deseleccionar(selecciones) {
             let tarjeta2 = document.getElementById(`tarjeta${selecciones[1]}`);
             tarjeta1.style.transform = "rotateY(0deg)";
             tarjeta2.style.transform = "rotateY(0deg)";
-            movi++;
         }else{
             // si coinciden se cambia de color plum = "color ciruela"
             trasera1.style.background = "plum";
             trasera2.style.background = "plum";
-            movi++;
         }
     }, 1000);
 }
