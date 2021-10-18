@@ -4,6 +4,11 @@ https://editor.p5js.org/Jeff-Aporta/sketches/odCrSbV8h
 imagenes y gif:
 https://editor.p5js.org/Jeff-Aporta/sketches/xaZn8parC
 
+https://padlet.com/jace_serviciosinformaticos/programacion
+
+ventana emergente:
+https://codepen.io/31russ/pen/fjgAx?editors=0100
+
 ejemplos:
 	armadura:
 	https://codepen.io/calde2006/pen/RwryRWe?editors=1000
@@ -16,3 +21,5 @@ ejemplos:
 	https://codepen.io/davcs86/pen/MWpVpda
 
 	https://www.it-swarm-es.com/es/javascript/javascript-que-se-ejecuta-despues-de-cargar-la-pagina/957969702/
+
+	https://flatuicolors.com/

@@ -5,15 +5,24 @@
     <meta charset="UTF-8">
     <title>Memorama</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="emergemte.css" rel="stylesheet" type="text/css" />
     <script src="memo.js"></script>
     <!-- link de la libreria de iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body onload="generarTablero();">
+    <div class="popup">
+        <h2>This is my popup</h2>
+        <p>penatibus condimentum aenean.</p>
+    
+        <p>proin penatibus magna tempor.</p>
+        <button name="close">Close</button>
+    </div>
+
     <div class="filaJugador">
-        <p>Movimientos</p>
-        <p id="nombreUno">Jugador</p>
+        <h1 id="move">Movimientos</h1>
+        <h2 id="nombreUno">:</h2>
     </div>
     <div id="tablero">
     </div>

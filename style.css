@@ -11,7 +11,7 @@ body {
     padding: 0;
     margin: 0;
     -webkit-perspective: 1000;
-    background: rgb(99, 187, 199);
+    background: #17c0eb;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,7 +52,7 @@ div {
     transform: rotateY(180deg);
 }
 .superior {
-    background: linear-gradient(0deg, rgba(255,68,68,1) 0%, rgba(255,85,85,1) 100%);
+    background: linear-gradient(0deg, #786fa6 0%, #574b90 100%);
 }
 
 /* boton de nuevo juego */
@@ -76,4 +76,10 @@ div {
     100% {
         transform: rotateY(0deg);
     }
+}
+
+#nombreUno, #move{
+    color: white;
+    /* font-size: 40px; */
+    text-align: left;
 }

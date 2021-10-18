@@ -1,10 +1,7 @@
 // variables
 let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
-// let jugadorUno = 0;
-// let jugadorDos = 0;
-// let primerJugador = true;
-// let segundoJugador = false;
+
 var movi=0;
 var jugUnoName = getParameterByName('nombre');
 
@@ -75,8 +72,7 @@ function generarTablero() {
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
 
-    
-    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": ";
+    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
 }
 
 // tarjetas seleccionadas y deseleccionadas
@@ -93,6 +89,9 @@ function seleccionarTarjeta(i) {
 }
 
 function deseleccionar(selecciones) {
+    movi++;
+    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
+    console.log(movi);
     setTimeout(() => {
         let trasera1 = document.getElementById("trasera" + selecciones[0]);
         let trasera2 = document.getElementById("trasera" + selecciones[1]);
