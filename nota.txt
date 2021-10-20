@@ -24,3 +24,5 @@ ejemplos:
 	https://www.it-swarm-es.com/es/javascript/javascript-que-se-ejecuta-despues-de-cargar-la-pagina/957969702/
 
 	https://flatuicolors.com/
+
+	http://w3.unpocodetodo.info/css3/transparencias.php
