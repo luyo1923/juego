@@ -95,7 +95,6 @@ function deseleccionar(selecciones) {
     setTimeout(() => {
         let trasera1 = document.getElementById("trasera" + selecciones[0]);
         let trasera2 = document.getElementById("trasera" + selecciones[1]);
-
         // si no coinciden giran
         if (trasera1.innerHTML != trasera2.innerHTML) {
             let tarjeta1 = document.getElementById("tarjeta" + selecciones[0]);
@@ -108,8 +107,9 @@ function deseleccionar(selecciones) {
             trasera2.style.background = "plum";
             pop++;
             console.log(pop);
-            if (pop===12){
+            if (pop === 1){
                 document.getElementById("vent").style.display="block";
+                document.getElementById('ganador').innerHTML = "El jugador " + jugUnoName + " Ganó la partida con " + movi + " movimientos";
             }
         }
     }, 1000);
