@@ -4,6 +4,7 @@ let selecciones = []; //donde se guardan temporalmente las selecciones de las ta
 
 var movi=0;
 var jugUnoName = getParameterByName('nombre');
+var pop = 0;
 
 document.onload = generarTablero();
 
@@ -91,7 +92,6 @@ function seleccionarTarjeta(i) {
 function deseleccionar(selecciones) {
     movi++;
     document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
-    console.log(movi);
     setTimeout(() => {
         let trasera1 = document.getElementById("trasera" + selecciones[0]);
         let trasera2 = document.getElementById("trasera" + selecciones[1]);
@@ -106,6 +106,11 @@ function deseleccionar(selecciones) {
             // si coinciden se cambia de color plum = "color ciruela"
             trasera1.style.background = "plum";
             trasera2.style.background = "plum";
+            pop++;
+            console.log(pop);
+            if (pop===12){
+                document.getElementById("vent").style.display="block";
+            }
         }
     }, 1000);
 }
