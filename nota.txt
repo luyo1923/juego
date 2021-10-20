@@ -8,6 +8,7 @@ https://padlet.com/jace_serviciosinformaticos/programacion
 
 ventana emergente:
 https://codepen.io/31russ/pen/fjgAx?editors=0100
+https://codepen.io/rachel_web/pen/YXMEqO?editors=0100
 
 ejemplos:
 	armadura:
