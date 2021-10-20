@@ -11,6 +11,7 @@ body {
     padding: 0;
     margin: 0;
     -webkit-perspective: 1000;
+    perspective: 1000;
     background: #17c0eb;
     min-height: 100vh;
     display: flex;
