@@ -108,8 +108,11 @@ function deseleccionar(selecciones) {
             pop++;
             console.log(pop);
             if (pop === 1){
-                document.getElementById("vent").style.display="block";
+                document.getElementById("vent").style.display = "block";
                 document.getElementById('ganador').innerHTML = "El jugador " + jugUnoName + " Ganó la partida con " + movi + " movimientos";
+                document.getElementById('tablero').style.opacity = .5;
+                document.getElementById('flJugador').style.opacity = .5;
+                document.getElementById('cuerpo').style.background = "#2980b9";
             }
         }
     }, 1000);

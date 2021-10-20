@@ -86,7 +86,7 @@ div {
 
 /*ventan emergente*/
 .popup{
-    background: rgba(0, 0, 102,1);
+    background: #e74c3c;
     width: 30%;
     color: rgba(255, 255, 255, 1);
     font-size: 18px;
@@ -97,4 +97,5 @@ div {
     position: absolute;
     display: none;
     z-index: 999;
+    border: #f1c40f 5px solid;
 }
