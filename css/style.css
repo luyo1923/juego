@@ -77,13 +77,14 @@ div {
 
 /*ventan emergente*/
 .popup{
+    height: 500px;
+    width: 500px;
     background: #e74c3c;
-    width: 30%;
     color: black;
     font-size: 18px;
     text-align: center;
     padding: 33px;
-    min-height: 250px;
+    /*min-height: 100px;*/
     border-radius: 22px;
     position: absolute;
     display: none;

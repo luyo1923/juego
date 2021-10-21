@@ -1,8 +1,8 @@
-#uno, #score{
-    background-color: #4CAF50; /* Green */
+#uno, #score, #comienzo{
+    background-color: #786fa6; /* Green */
     border: transparent;
     border-radius: 8px;
-    color: white;
+    color: black;
     padding: 15px 32px;
     width: 500px;
     text-align: center;
@@ -15,8 +15,9 @@
     
 }
 #uno:hover,
+#comienzo:hover,
 #score:hover{
-    background-color: #666666; /* Green */
+    background: linear-gradient(0deg, #786fa6 0%, #574b90 100%); /* Green */
     color: white;
-    border: 1px solid #4CAF50;
+    border: 5px solid white;
 }
