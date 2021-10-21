@@ -1,0 +1,5 @@
+#17c0eb : celeste
+#666666 : gris
+#e74c3c : rojo
+#786fa6 : morado claro
+#574b90 : morado oscuro

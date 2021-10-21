@@ -56,16 +56,6 @@ div {
     background: linear-gradient(0deg, #786fa6 0%, #574b90 100%);
 }
 
-/* boton de nuevo juego */
-.newJuego {
-    cursor: pointer;
-    background: linear-gradient(orange, darkorange);
-    padding: 20px;
-    border-radius: 50px;
-    border: white 5px solid;
-    font-size: 130%;
-    display: block;
-}
 
 /* mostrar al inicio los iconos durante 5s */
 @keyframes iniciar {
