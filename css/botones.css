@@ -1,0 +1,22 @@
+#uno, #score{
+    background-color: #4CAF50; /* Green */
+    border: transparent;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    width: 500px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+#uno:hover,
+#score:hover{
+    background-color: #666666; /* Green */
+    color: white;
+    border: 1px solid #4CAF50;
+}

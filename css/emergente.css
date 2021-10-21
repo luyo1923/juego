@@ -14,12 +14,13 @@
 	color: #FFFFFF;
 	cursor: pointer;
 
-	&:focus {
-		outline: none;
-	}
-	&:hover {
-		background: lighten(#9AD3DE, 10%);
-	}
+	
+}
+.botonDeCerra:focus {
+	outline: none;
+}
+.botonDeCerra:hover {
+	background: lighten(#9AD3DE, 10%);
 }
 
 /*boton animacion*/
