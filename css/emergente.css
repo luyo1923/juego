@@ -1,6 +1,8 @@
 .popup{
-	margin-left: 600px;
-	margin-right: 600px;
+	/* margin-left: 300px; */
+	/* margin-right: 600px; */
+    /* margin: 300px; */
+    left: 30%;
     height: 250px;
     width: 500px;
     background: #e74c3c;
@@ -9,7 +11,7 @@
     padding-right: 100px;
     border-radius: 22px;
     position: absolute;
-    display:none;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 999;
