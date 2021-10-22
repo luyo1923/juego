@@ -1,6 +1,6 @@
 #uno, #score, #comienzo{
     background-color: #786fa6; /* Green */
-    border: transparent;
+    border: 3px solid black;
     border-radius: 8px;
     color: black;
     padding: 15px 32px;
@@ -12,12 +12,12 @@
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
-    
 }
 #uno:hover,
 #comienzo:hover,
 #score:hover{
     background: linear-gradient(0deg, #786fa6 0%, #574b90 100%); /* Green */
     color: white;
-    border: 5px solid white;
+    border: 3px solid white;
+    /*box-shadow: 5px 5px white;*/
 }

@@ -91,3 +91,8 @@ div {
     z-index: 999;
     border: black 5px solid;
 }
+
+#meemorama{
+    font-size: 100px;
+    height: auto;
+}

@@ -1,0 +1,13 @@
+#ingname{
+    padding: 15px 32px;
+    width: 430px;
+    font-size: 200%;
+    background-color: transparent;
+    border-radius: 5px;
+    border: transparent;
+    border-bottom: 3px solid black;
+}
+#ingresNombre{
+    font-size: 30px;
+    padding: 1px;
+}
