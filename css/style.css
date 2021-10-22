@@ -17,12 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    /*align-items: center;
+    text-align: center;*/
     font-family: calibri;
 }
 div {
     display: inline-block;
+    align-items: center;
+    text-align: center;
 }
 
 /* tarjetas */
@@ -95,4 +97,6 @@ div {
 #meemorama{
     font-size: 100px;
     height: auto;
+    align-items: center;
+    text-align: center;
 }

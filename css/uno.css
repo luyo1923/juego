@@ -6,6 +6,11 @@
     border-radius: 5px;
     border: transparent;
     border-bottom: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 #ingresNombre{
     font-size: 30px;
