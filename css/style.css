@@ -8,8 +8,8 @@
     transition: all 0.5s;
 }
 body {
-    padding: 0;
-    margin: 0;
+    /*padding: 0;
+    margin: 0;*/
     -webkit-perspective: 1000;
     perspective: 1000;
     background: #17c0eb;
@@ -78,25 +78,23 @@ div {
 }
 
 /*ventan emergente*/
-.popup{
-    height: 500px;
-    width: 500px;
-    background: #e74c3c;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    padding: 33px;
-    /*min-height: 100px;*/
-    border-radius: 22px;
-    position: absolute;
-    display: none;
-    z-index: 999;
-    border: black 5px solid;
-}
+
 
 #meemorama{
     font-size: 100px;
     height: auto;
     align-items: center;
     text-align: center;
+}
+
+#flJugador{
+    /*border: 5px solid black;*/
+    border-radius: 5px;
+    background: gray;
+    height: auto;
+    width: 1000px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 33%;
 }
