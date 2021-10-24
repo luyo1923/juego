@@ -15,6 +15,7 @@
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
+    font-family: "arcade2";
 }
 #uno:hover,
 #comienzo:hover,
