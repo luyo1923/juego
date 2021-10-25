@@ -82,7 +82,7 @@ div {
 
 #meemorama{
     font-size: 100px;
-    font-family: "arcade2";
+    font-family: 'arcade2';
     height: auto;
     align-items: center;
     text-align: center;
@@ -118,7 +118,7 @@ div {
 
 /*Datos del juego*/
 #flJugador{
-    font-family: "arcade2";
+    font-family: 'arcade2';
     border-radius: 5px;
     height: auto;
     width: 800px;
