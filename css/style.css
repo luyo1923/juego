@@ -86,13 +86,40 @@ div {
     height: auto;
     align-items: center;
     text-align: center;
+    color: red;
+    -webkit-text-stroke: 1px black;
+}
+#meemorama:hover{
+    cursor:pointer;
+    animation-duration: 1s;
+    animation-name: mememo;
+    animation-iteration-count: infinite;
 }
 
+@keyframes mememo{
+    0%,
+    100%{
+        color: red;
+        font-size: 100px;
+    }
+    25%{
+        color: orange;
+        font-size: 101px;
+    }
+    50%{
+        color: yellow;
+        font-size: 102px;
+    }
+    75%{
+        color: orange;
+        font-size: 101px;
+    }
+}
+
+/*Datos del juego*/
 #flJugador{
     font-family: "arcade2";
-    /*border: 5px solid black;*/
     border-radius: 5px;
-    /*background: gray;*/
     height: auto;
     width: 800px;
     margin-left: 35px;
@@ -103,6 +130,13 @@ div {
     overflow: hidden;
     float: left;
     grid-template-columns: auto auto auto;
+}
+#nombreUno{
+    color: black;
+}
+#move{
+    color:black;
+    font-size: 50px;
 }
 
 /*fuentes*/

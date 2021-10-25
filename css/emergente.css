@@ -3,7 +3,7 @@
 	/* margin-right: 600px; */
     /* margin: 300px; */
     left: 30%;
-    height: 250px;
+    height: 300px;
     width: 500px;
     background: #e74c3c;
     font-size: 35px;
@@ -16,4 +16,5 @@
     align-items: center;
     z-index: 999;
     border: black 5px solid;
+    font-family: "arcade2";
 }

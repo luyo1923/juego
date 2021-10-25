@@ -109,7 +109,7 @@ function deseleccionar(selecciones) {
             console.log(pop);
             if (pop === 12){
                 document.getElementById("vent").style.display = "block";
-                document.getElementById('ganador').innerHTML = "El jugador " + jugUnoName + " Ganó la partida con " + movi + " movimientos";
+                document.getElementById('ganador').innerHTML = jugUnoName + " Gano la partida con " + movi + " movimientos";
                 document.getElementById('tablero').style.opacity = .5;
                 document.getElementById('flJugador').style.opacity = .5;
                 document.getElementById('cuerpo').style.background = "#2980b9";
