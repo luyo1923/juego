@@ -27,7 +27,7 @@ function cargarIconos() {
     // generar cada uno de los elementos de los iconos
     // cadena de texto comillas simples
     iconos = [
-        '<i class="fas fa-star"></i>',
+        '<i class="fas fa-chess-king"></i>',
         '<i class="far fa-star"></i>',
         '<i class="fas fa-star-of-life"></i>',
         '<i class="fas fa-star-and-crescent"></i>',
