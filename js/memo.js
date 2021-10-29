@@ -107,7 +107,7 @@ function deseleccionar(selecciones) {
             trasera2.style.background = "plum";
             pop++;
             console.log(pop);
-            if (pop === 12){
+            if (pop === 1){
                 document.getElementById("vent").style.display = "block";
                 document.getElementById('ganador').innerHTML = jugUnoName + " Gano la partida con " + movi + " movimientos";
                 document.getElementById('tablero').style.opacity = .5;
