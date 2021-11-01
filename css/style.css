@@ -8,8 +8,6 @@
     transition: all 0.5s;
 }
 body {
-    /*padding: 0;
-    margin: 0;*/
     -webkit-perspective: 1000;
     perspective: 1000;
     background: #17c0eb;
@@ -17,8 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*align-items: center;
-    text-align: center;*/
     font-family: calibri;
 }
 div {
@@ -141,29 +137,6 @@ div {
 
 /*fuentes*/
 @font-face {
-    font-family: 'arcade1';
-    src: url(/fuentes/arcade/ARCADE_I.TTF);
-}
-@font-face {
     font-family: "arcade2";
-    src: url(/fuentes/arcade/ARCADE_N.TTF);
-}
-@font-face {
-    font-family: 'arcade3';
-    src: url(/fuentes/arcade/ARCADE_R.TTF);
-}
-
-@font-face {
-    font-family: 'karma';
-    src: url(/fuentes/karma/ka1.ttf);
-}
-
-@font-face {
-    font-family: 'monochrome';
-    src: url(/fuentes/monochrome/Monochrome.ttf);
-}
-
-@font-face {
-    font-family: 'pacpac';
-    src: url(/fuentes/pacpac/PAC-FONT.TTF);
+    src: url(../fuentes/arcade/arcade2.TTF);
 }
