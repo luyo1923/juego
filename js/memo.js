@@ -3,7 +3,7 @@ let iconos = []; //donde se guardan los iconos
 let selecciones = []; //donde se guardan temporalmente las selecciones de las tarjetas
 
 var movi=0;
-var jugUnoName = getParameterByName('nombre');
+// var jugUnoName = getParameterByName('nombre');
 var pop = 0;
 
 document.onload = generarTablero();
@@ -12,16 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
     new generarTablero();
 });
 
-/**
- * @param String name
- * @return String
- */
-function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-    results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-}
+// /**
+//  * @param String name
+//  * @return String
+//  */
+// function getParameterByName(name) {
+//     name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+//     var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+//     results = regex.exec(location.search);
+//     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+// }
 
 function cargarIconos() {
     // generar cada uno de los elementos de los iconos
@@ -73,7 +73,7 @@ function generarTablero() {
     tarjetas.sort(() => Math.random() - 0.5);
     tablero.innerHTML = tarjetas.join(" ");
 
-    document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
+    // document.getElementById('nombreUno').innerHTML = "Jugador " + jugUnoName + ": " + movi;
 }
 
 // tarjetas seleccionadas y deseleccionadas
@@ -117,5 +117,3 @@ function deseleccionar(selecciones) {
         }
     }, 1000);
 }
-
-Ñ
