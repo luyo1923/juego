@@ -42,6 +42,23 @@ function cargarIconos() {
     ];
 }
 
+// function cargarIconos() {
+//     iconos = [
+//         '<img src="https://i.ibb.co/qgc06TF/centipede.jpg">',
+//         '<img src="https://i.ibb.co/6PpH9LM/donkey.jpg">',
+//         '<img src="https://i.ibb.co/LSjmRRW/galaga.jpg">',
+//         '<img src="https://i.ibb.co/sVC28VK/link.jpg">',
+//         '<img src="https://i.ibb.co/ts0RJjP/mario.jpg">',
+//         '<img src="https://i.ibb.co/k3LJRQ3/metroid.jpg">',
+//         '<img src="https://i.ibb.co/cDWkXtC/pacman.jpg">',
+//         '<img src="imagenes/patoDuckHunt.jpg">',
+//         '<img src="imagenes/qbert.jpg">',
+//         '<img src="imagenes/spaceInvader.jpg">',
+//         '<img src="imagenes/tetris.jpg">',
+//         '<img src="imagenes/trinidadLZ.jpg">',
+//     ];
+// }
+
 function generarTablero() {
     cargarIconos();
     selecciones = [];
