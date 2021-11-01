@@ -34,3 +34,11 @@
 </body>
 
 </html>
+
+<?php
+    include './conexbd.php';
+
+    $nombre = $_POST['nombreJugadorIng'];
+    // $punto = $_POST[];
+    $conn->query("INSERT INTO puntajes VALUES ('', '$nombre', '')");
+?>
